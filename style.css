@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+body {
+  background:black;
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  animation: twinkle 1s ease-in-out infinite;
+  font-family: "Courier Prime";
+  color: #242424;
+}
+
+@keyframes twinkle {
+  0% {background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 15px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 5px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 15px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 5px);}
+  50% {background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 12px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 7px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 12px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 7px);}
+  100% {background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 10px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 10px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 10px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 10px);}
+}
+
+#main {
+  background: #f2f1e6;
+  width: 500px;
+  padding: 130px 10px 70px 10px;
+  border-radius: 50%;
+  margin: auto;
+  text-align:center;
+  margin-top: 100px;
+}
+
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+.btn {
+  color: #242424;
+}
+
+.btn:focus, .btn:active {
+  box-shadow: none;
+}
+
+.btn:hover {
+  transition: 1s;
+  color: #c2c2c2;
+}

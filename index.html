@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 25 + 5 clock</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <div id="main" class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div id="break-label">break length</div>
+          <button id="break-increment" class="btn arrow">
+            <i class="fas fa-arrow-up"></i>
+          </button>
+          <div id="break-length"></div>
+          <button id="break-decrement" class="btn arrow">
+             <i class="fas fa-arrow-down"></i>
+          </button>      
+      </div>
+      
+      <div class="col-sm">
+        <div id="session-label">session length</div>
+          <button id="session-increment" class="btn arrow">
+            <i class="fas fa-arrow-up"></i>
+          </button>
+        <div id="session-length"></div>
+          <button id="session-decrement" class="btn arrow">
+            <i class="fas fa-arrow-down"></i>
+          </button>
+      </div>
+    </div>
+    
+      <h2 id="timer-label"></h2>
+      <h3 id="time-left"></h3>
+      <audio id="beep" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/success.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+        <button id="start_stop" class="btn">
+          <i class="fas fa-play"></i><i class="fas fa-pause"></i>
+        </button>
+        <button id="reset" class="btn">
+          <i class="fas fa-undo"></i>
+        </button>
+  </div>
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
